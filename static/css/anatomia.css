@@ -1,0 +1,404 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  background-image: none;
+  background-color: #e6e6e6;
+}
+
+.inner {
+  padding: 0;
+  margin: 0;
+}
+
+/* Section */
+section {
+  padding: 0 0 4em 0;
+  border-top: solid 2px rgba(210, 215, 217, 0.75);
+}
+
+section:first-of-type {
+  border-top: 0 !important;
+}
+
+/* Typography */
+p, td, section li {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+}
+
+.major {
+  border-bottom: solid 3px #f56a6a;
+  display: inline-block;
+  background-color: #333;
+  padding: 5px;
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Images */
+.image {
+  border-radius: 0.375em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image img {
+  border-radius: 0.375em;
+}
+
+.image.left,
+.image.right {
+  max-width: 150px;
+}
+
+.image.left .initi{
+  max-width: 80px;
+}
+
+.image.left .initi2{
+  max-width: 150px;
+}
+
+.image.lefti .secon{
+  max-width: 150px;
+}
+
+.image.left {
+  float: left;
+  padding: 0 1.5em 1em 0;
+}
+
+.image.right {
+  float: right;
+  padding: 0 0 1em 1.5em;
+}
+
+.generalidades p {
+  margin-top: 5px;
+}
+
+.generalidades .descrip{
+  padding: 0 25px;
+}
+
+.generalidades{
+  border-radius: 10px 10px 0 0;
+  padding-bottom: 30px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 480px) {
+  .image.left,
+  .image.right {
+    float: none;
+    max-width: 100%;
+    margin: 0 0 1em 0;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .inner {
+    padding: 0 5em 0.1em 5em;
+  }
+  section {
+    padding: 2em 0 3em 0;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .inner {
+    padding: 0 4em 0.1em 4em;
+  }
+  section {
+    padding: 2em 0 2em 0;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .inner {
+    padding: 0 2em 0.1em 2em;
+  }
+  section {
+    padding: 2em 0 1em 0;
+  }
+}
+.elmensaje section{
+  padding-bottom: 0;
+  padding-top: 10px;
+}
+.ultpart{
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.toto{
+  padding-bottom: 0;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjeton-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0 -10px;
+}
+.tarjeton-fila {
+  flex: 0 0 calc(50% - 20px); /* 50% de ancho menos el gap */
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+
+.tarjeton {
+    flex: 1; /* Hace que cada tarjeton ocupe el mismo espacio */
+}
+
+
+.list-group-item {
+  text-align: start;
+  list-style: none;
+  padding: 20px;
+  margin-bottom: 5px;
+  background-color: #ffdee086;
+  border-radius: 10px;
+  color: black;
+}
+
+.aparato-reproductor.male .list-group-item{
+  background-color: #def3ff85 ;
+}
+
+.list-group-item.dos {
+  text-align: end;
+}
+
+.list-group-item.center {
+  text-align: center;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .tarjeton-fila {
+    flex: 0 0 100%;
+  }
+}
+
+.internos {
+  display: block;
+  list-style: none;
+  padding: 20px;
+  margin-top: 15px;
+  background-color: #ffdee086 ;
+  border-radius: 10px;
+  color: black;
+  align-items: center;
+}
+
+.contenedor-dos{
+  width: 100%;
+}
+
+.aparato-reproductor.male .internos{
+  background-color: #DEF3FF ;
+}
+
+.internos.cuatro {
+  margin-bottom: 30px;
+}
+
+.contenidomenu {
+  width: 100%;
+  overflow: hidden;
+}
+
+.contenidomenu .inir {
+  text-align: center;
+}
+
+/* Nuevos estilos para la funcionalidad de expandir/colapsar */
+.aparato-reproductor {
+  margin-bottom: 8px;
+  background-color: #ffe4e4;
+  border-radius: 0 10px 0 0;
+  overflow: hidden;
+}
+
+.titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-left: solid 3px #f56a6a;
+}
+
+.titulo h2 {
+  margin: 0;
+  margin-left: 10px;
+  font-size: 1.2em;
+}
+
+.initial-content {
+  display: flex;
+  padding: 15px;
+  background-color: #ffbabf;
+}
+
+.aparato-reproductor.male .initial-content {
+  background-color: #b3e3ff88;
+}
+
+.aparato-reproductor.tercero .initial-content {
+  background-color: #71ffa088;
+}
+
+.aparato-reproductor.cuarto .initial-content {
+  background-color: #e2e2e2;
+}
+.aparato-reproductor.legal .initial-content {
+  background-color: #583264;
+}
+
+.initial-content p{
+  padding-left: 15px;
+}
+
+.expandable-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  background-color: #ffbabf;
+  padding: 0 15px;
+}
+
+.aparato-reproductor.male .expandable-content {
+  background-color: #b3e3ff88;
+}
+
+.aparato-reproductor.tercero .expandable-content {
+  background-color: #71ffa088;
+}
+
+.aparato-reproductor.cuarto .expandable-content {
+  background-color: #DEF3FF;
+}
+
+.aparato-reproductor.legal .expandable-content {
+  background-color: #583264;
+}
+
+.expandable-content.expanded {
+  max-height: fit-content;
+  padding: 15px;
+  transition: max-height 1s ease-in, padding 0.5s ease-in;
+}
+
+/* Estilos para el texto */
+b, strong {
+  font-weight: bold;
+}
+
+i, em {
+  font-style: italic;
+}
+
+u {
+  text-decoration: underline;
+}
+
+.arroww {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.expandable-title.expanded .arroww {
+  transform: rotate(-90deg);
+}
+
+.aparato-reproductor.masculino .initial-content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.aparato-reproductor.masculino .initial-content img {
+  margin-left: 15px;
+}
+
+.reproductive-system-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.external-organs, .internal-organs {
+  flex: 1;
+  max-width: 100%;
+}
+
+.system-image {
+  flex: 2;
+  text-align: center;
+}
+
+.external-organs h3, .internal-organs h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.external-organs ul, .internal-organs ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.external-organs li, .internal-organs li {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .reproductive-system-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .external-organs, .internal-organs, .system-image {
+      max-width: 100%;
+      margin-bottom: 20px;
+  }
+}
+
+.elmensaje{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .initial-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image.lefti {
+    margin-bottom: 15px;
+  }
+
+  .initial-content p {
+    padding-left: 0;
+  }
+}

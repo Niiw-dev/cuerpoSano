@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b8brco2qe28f8"
+path="res://.godot/imported/sound2.mp3-ed00a7fc307768c477da8d5d7a0d0865.mp3str"
+
+[deps]
+
+source_file="res://pROYECTOS/ENIGMA HUMANO PAGINA (SARA CORREA)/pregunta/data/sound2.mp3"
+dest_files=["res://.godot/imported/sound2.mp3-ed00a7fc307768c477da8d5d7a0d0865.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,101 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin-top: 5px;
+    width: 1200px;
+    max-height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.single {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    max-width: 260px;
+    height: 450px;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    transition: 500ms ease-in-out all;
+    cursor: pointer;
+}
+.single::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, .5);
+    transition: 500ms ease-in-out background-color;
+}
+.single:nth-child(1) {
+    background-image: url(../img/paj1.png);
+}
+.single:nth-child(2) {
+    background-image: url(../img/paj2.png);
+}
+.single:nth-child(3) {
+    background-image: url(../img/paj3.png);
+}
+.single:nth-child(4) {
+    background-image: url(../img/paj4.jpg);
+}
+
+.content {
+    transform: rotate(-90deg);
+    transition: 500ms ease-in-out transform;
+    height: fit-content;
+    font-size: clamp(0.8rem, 1vw, 1.5rem);
+}
+.content span {
+    background-color: rgba(0, 0, 0, .7);
+    color: #fff;
+    padding: 0;
+    border-radius: .2rem;
+    border: none;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .7);
+    height: 0;
+    overflow: hidden;
+    display: none;
+    transition: 500ms ease-in-out height,
+                500ms ease-in-out padding;
+}
+
+h2 {
+    text-align: center;
+    color: #f0f8ff;
+    text-shadow: 0 0 .3rem rgba(0, 0, 0, 1);
+    margin-bottom: 1rem;
+    transform: scale(1.5);
+    transition: 500ms ease-in-out transform;
+}
+
+h3{
+    text-align: start;
+}
+
+.single:hover {
+    width: 500px;
+}
+.single:hover::before {
+    background-color: rgba(0, 0, 0, .3);
+}
+.single:hover .content {
+    transform: rotate(0);
+}
+.single:hover h2 {
+    transform: scale(1);
+}
+.single:hover span {
+    display: block;
+    height: 100%;
+    border: 2px solid #fff;
+    padding: 2rem;
+}

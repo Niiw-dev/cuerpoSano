@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b1mrtr1eugvqy"
+path="res://.godot/imported/sound2.mp3-9fa72eac093c7e064c855357139f9720.mp3str"
+
+[deps]
+
+source_file="res://pROYECTOS/ENIGMA HUMANO PAGINA (SARA CORREA)/millorario_html/millonario_fase2/data/sound2.mp3"
+dest_files=["res://.godot/imported/sound2.mp3-9fa72eac093c7e064c855357139f9720.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
