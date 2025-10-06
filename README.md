@@ -65,4 +65,7 @@ El objetivo es **aprender jugando**, fortaleciendo la comprensión anatómica de
  ┗ 📜 README.md
 ```
 
-   
+---
+
+### 👨‍💻 Autor
+Creado por **[Niiw.Dev](https://github.com/Niiw-dev)** 🔥
