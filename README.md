@@ -40,7 +40,7 @@ Su propósito es fomentar el aprendizaje sobre la anatomía y la prevención des
    ```
 3. Inicia un servidor local en Python para visualizar la web:
    ```bash
-   python -m http.server
+   python server.py
    ```
 4. Accede a `http://localhost:8000` en tu navegador para explorar el sitio.  
 
@@ -56,12 +56,13 @@ El objetivo es **aprender jugando**, fortaleciendo la comprensión anatómica de
 ### 🧩 Estructura del Proyecto
 ```plaintext
 📦 cuerpoSano
- ┣ 📂 assets/          # Recursos gráficos e ilustraciones
- ┣ 📂 pages/           # Secciones del sitio (anatomía, prevención, etc.)
- ┣ 📂 scripts/         # Código JavaScript de interactividad
- ┣ 📂 styles/          # Archivos CSS
- ┣ 📂 game/            # Carpeta del juego Godot integrado
- ┣ 📜 index.html       # Página principal
+ ┣ 📂 Templates/         # Página principal 
+ ┣ 📂 chicles/           # Juego
+ ┣ 📂 juegosara/         # Carpeta del juego Godot integrado
+ ┣ 📂 millonario_html/   # Juego
+ ┣ 📂 pregunta/          # Juego
+ ┣ 📂 static/          # archivos staticos como javascript, imagenes, estilos css y videos
+ ┣ 📜 server.py          # Servidor python para que funcione el juego
  ┗ 📜 README.md
 ```
 
